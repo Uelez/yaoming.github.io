@@ -1,0 +1,175 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+    color: #292928;
+    font-size: 16px;
+	font-family: 'Ranade', sans-serif !important;
+    background-color: #eaeaea;
+}
+
+@font-face {
+    font-family: 'Ranade Medium';
+    font-style: normal;
+    font-weight: normal;
+    src:url('https://fonts.cdnfonts.com/s/85278/Ranade-Medium.woff') format('woff');
+}
+
+a:focus {
+  color: #FFCC99 !important;
+}
+
+.topbar {
+  overflow: hidden;
+  background-color: #273c75;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:1000;
+}
+
+.topbar .main-menu {
+	margin:0 auto;
+	max-width: 1240px;
+}
+
+.topbar .main-menu .logo {
+	float:left;
+	margin:15px 20px 15px -15px;
+}
+
+.topbar #buy-now {
+	margin-top:20px;
+	padding:10px;
+}
+
+.topbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 30px 20px;
+  text-decoration: none;
+  font-family: 'Ranade Medium';
+  font-size: 16px;
+}
+
+.topbar a:hover {
+  color: #FFCC99;
+}
+
+.topbar a.active {
+  background-color: #273c75;
+  color: white;
+}
+
+.topbar .icon {
+  display: none;
+  color:#fff;
+}
+
+#about {
+	margin:0 auto;
+  	max-width: 1280px;
+	padding:100px 10px 20px 10px;
+}
+
+#about .social {
+	padding:10px;
+}
+
+#join-us {
+	max-width:1240px;
+	background-color:#f0f7fc; margin-top:30px; padding:15px; font-size:18px; color:#003399;
+}
+
+#token {
+	max-width:1240px;
+	background-color:#738fbf; margin-top:30px; padding:15px; font-size:18px; color:#FFFFFF;
+}
+
+#gallery {
+	max-width: 1290px;
+	margin:0 auto;
+}
+
+#gallery .gl-item {
+	padding:10px;
+	height:230px;
+}
+
+#gallery .gl-item img {
+	border:1px solid #003366;
+	padding:30px;
+}
+
+.row {
+  display:flex;
+  padding:15px;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+	.topbar {padding:0 25px;}
+}
+
+@media screen and (max-width: 991px) {
+	#token .tk-item {
+		margin-bottom:20px;
+		padding-bottom:30px;
+		border-bottom:1px dashed #003366;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	#about {
+		padding:80px 10px 20px 10px;
+	}
+	#about #yaoming {
+		width:60% !important;
+	}
+	#buy-now {
+		margin-top:0 !important;
+		padding:20px !important;
+		width:100% !important;
+		border-radius:0 !important;
+		border-bottom:none !important;
+	}
+	
+	.topbar {padding:0;}
+	.topbar .main-menu .logo {
+		float:left;
+		width:30px;
+		height:30px;
+		margin:15px;
+	}
+	.topbar a:not(:first-child) {display: none;}
+	.topbar a {
+  		padding: 20px;
+	}
+	.topbar a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 750px) {
+  .topbar.responsive {position: relative; margin-bottom:-60px;}
+  .topbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topbar.responsive .logo {
+  	display:none;
+	}
+  .topbar.responsive a {
+  	padding: 20px;
+    float: none;
+    display: block;
+    text-align: left;
+	border-bottom:1px dashed #003366;
+  }
+}
